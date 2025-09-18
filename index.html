@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Breaking Into IB — Guaranteed Offer or You Don’t Pay</title>
+  <meta name="description" content="Get an investment banking offer or you don’t pay. Krishna Thiru’s 4-part system: AI Networking Engine, Insider Mentorship, Non-Target Positioning, Advanced Interview Prep." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#eef7ff',
+              100: '#d9ecff',
+              200: '#b8daff',
+              300: '#89c1ff',
+              400: '#5aa6ff',
+              500: '#2a87ff',
+              600: '#146ef4',
+              700: '#0f55c0',
+              800: '#0d4498',
+              900: '#0c3a7d'
+            },
+            ink: '#0b1220'
+          },
+          boxShadow: {
+            xlsoft: '0 20px 50px -20px rgba(0,0,0,0.25)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html, body {font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;}
+    /* subtle animated gradient */
+    .bg-grid {
+      background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.08) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+    .shine {
+      position: relative;
+      overflow: hidden;
+    }
+    .shine:after {
+      content: '';
+      position: absolute;
+      top: -100%; left: -150%; width: 200%; height: 300%;
+      background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,.18) 30%, transparent 60%);
+      transform: rotate(10deg);
+      animation: shine 7s infinite;
+    }
+    @keyframes shine {
+      0% {transform: translateX(-100%) rotate(10deg);} 
+      60% {transform: translateX(100%) rotate(10deg);} 
+      100% {transform: translateX(100%) rotate(10deg);} 
+    }
+  </style>
+</head>
+<body class="bg-ink text-white selection:bg-primary-300 selection:text-ink">
+  <!-- Announcement / Scarcity Bar -->
+  <div class="sticky top-0 z-40 w-full bg-primary-900/70 backdrop-blur supports-[backdrop-filter]:bg-primary-900/50">
+    <div class="mx-auto max-w-7xl px-4 py-2 text-sm flex items-center justify-between">
+      <p class="font-medium">This recruiting cycle: <span id="spotsLeft" class="font-extrabold">10</span> spots left</p>
+      <div class="hidden sm:flex items-center gap-2">
+        <span class="opacity-80">Next cycle starts in</span>
+        <span id="countdown" class="font-semibold tabular-nums"></span>
+      </div>
+      <a href="#apply" class="hidden sm:inline-flex rounded-lg bg-white px-3 py-1 text-ink font-semibold hover:bg-primary-100">Apply Now</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-primary-900/40 to-transparent pointer-events-none"></div>
+    <div class="mx-auto max-w-7xl px-4 pt-16 pb-10 sm:pt-20 sm:pb-16">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs uppercase tracking-widest">Guaranteed Offer • No Offer, No Payment</span>
+          <h1 class="mt-5 text-4xl sm:text-5xl font-extrabold leading-tight">
+            How I Landed <span class="text-primary-300">3 Investment Banking Offers</span> from a Non‑Target — and How You Can Too
+          </h1>
+          <p class="mt-4 text-lg text-white/80">A repeatable 4‑part system built by <strong>Krishna Thiru</strong> that turns cold outreach into MD referrals, rebuilds your narrative, and drills interviews until you’re offer‑ready.</p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-3">
+            <a href="#vsl" class="shine inline-flex items-center justify-center rounded-2xl bg-primary-600 px-6 py-3 font-semibold shadow-xlsoft hover:bg-primary-500 focus:outline-none focus:ring-4 focus:ring-primary-400/40">Watch 5‑min Breakdown</a>
+            <a href="#apply" class="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-ink font-semibold shadow-xlsoft hover:bg-primary-50 focus:outline-none focus:ring-4 focus:ring-primary-300/40">Apply — 2 min</a>
+          </div>
+          <div class="mt-6 flex items-center gap-4 text-white/70">
+            <div class="flex -space-x-2">
+              <img alt="avatar" src="https://api.dicebear.com/9.x/initials/svg?seed=KT" class="h-8 w-8 rounded-full ring-2 ring-ink"/>
+              <img alt="avatar" src="https://api.dicebear.com/9.x/initials/svg?seed=VP" class="h-8 w-8 rounded-full ring-2 ring-ink"/>
+              <img alt="avatar" src="https://api.dicebear.com/9.x/initials/svg?seed=MD" class="h-8 w-8 rounded-full ring-2 ring-ink"/>
+            </div>
+            <p class="text-sm">30+ banker calls typically booked in the first 60 days via AI Networking Engine</p>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-video rounded-2xl border border-white/10 bg-white/5 p-2 shadow-xlsoft" id="vsl">
+            <button id="playVSL" class="relative flex h-full w-full items-center justify-center rounded-xl bg-grid">
+              <svg aria-hidden="true" class="h-16 w-16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <span class="sr-only">Play Video</span>
+            </button>
+          </div>
+          <p class="mt-3 text-xs text-white/60">Headline: “Get an Investment Banking Offer or You Don’t Pay.”</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Logos / Social Proof -->
+  <section aria-labelledby="proof" class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-10">
+      <h2 id="proof" class="sr-only">Firms we recruit for</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 opacity-80">
+        <!-- Logo placeholders; replace href/src with real logos -->
+        <div class="flex items-center justify-center rounded-xl bg-white/5 py-4">Goldman Sachs</div>
+        <div class="flex items-center justify-center rounded-xl bg-white/5 py-4">Morgan Stanley</div>
+        <div class="flex items-center justify-center rounded-xl bg-white/5 py-4">Guggenheim</div>
+        <div class="flex items-center justify-center rounded-xl bg-white/5 py-4">Evercore</div>
+        <div class="flex items-center justify-center rounded-xl bg-white/5 py-4">Lazard</div>
+        <div class="flex items-center justify-center rounded-xl bg-white/5 py-4">Jefferies</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Krishna Story / Why Listen -->
+  <section class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-16 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-bold">From 200+ Rejections to 3 Offers</h2>
+        <p class="mt-4 text-white/80">I went to a non‑target, didn’t have a perfect GPA, and had <em>zero</em> family connections. After hundreds of apps and ghosted messages, I cracked a system that turned networking into referrals and interviews into offers — including elite boutiques and interviews at bulge brackets.</p>
+        <ul class="mt-6 space-y-3 text-white/80">
+          <li class="flex gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-primary-400"></span>Built a scalable outreach engine to book real conversations with VPs/MDs.</li>
+          <li class="flex gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-primary-400"></span>Rewrote my narrative so non‑target & GPA became strengths.</li>
+          <li class="flex gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-primary-400"></span>Drilled technical + behavioral answers until delivery matched expectations.</li>
+        </ul>
+      </div>
+      <div class="relative">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xlsoft">
+          <h3 class="text-xl font-semibold">The Core Truth</h3>
+          <p class="mt-2 text-white/80">Banks don’t hire resumes — they hire people other bankers vouch for. This program creates those vouches on autopilot and makes you offer‑ready when the door opens.</p>
+          <div class="mt-6 grid sm:grid-cols-2 gap-4">
+            <div class="rounded-xl bg-white/5 p-4">
+              <div class="text-2xl font-extrabold tabular-nums">30+</div>
+              <div class="text-sm text-white/70">banker calls in 60 days</div>
+            </div>
+            <div class="rounded-xl bg-white/5 p-4">
+              <div class="text-2xl font-extrabold tabular-nums">3</div>
+              <div class="text-sm text-white/70">offers landed (my cycle)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The 4-Part System -->
+  <section class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-16">
+      <h2 class="text-2xl sm:text-3xl font-bold">What You Get</h2>
+      <div class="mt-8 grid lg:grid-cols-4 gap-6">
+        <div class="rounded-2xl bg-white/5 p-6 border border-white/10">
+          <h3 class="text-lg font-semibold">AI Networking Engine</h3>
+          <p class="mt-2 text-white/80">Proprietary outreach that sends personalized cold emails & messages at scale. No hand‑typing. It books real conversations with VPs/MDs on autopilot.</p>
+          <p class="mt-3 text-sm text-white/60">Typical result: 30+ calls in first 60 days.</p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6 border border-white/10">
+          <h3 class="text-lg font-semibold">Insider Mentorship</h3>
+          <p class="mt-2 text-white/80">1:1 guidance with current bankers — analysts, associates, VPs — at top firms. Get live resume, interview, and positioning feedback.</p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6 border border-white/10">
+          <h3 class="text-lg font-semibold">Non‑Target Positioning</h3>
+          <p class="mt-2 text-white/80">Rebuild your story so “non‑target” and an imperfect GPA become credibility, grit, and fit — not disqualifiers.</p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6 border border-white/10">
+          <h3 class="text-lg font-semibold">Advanced Interview Prep</h3>
+          <p class="mt-2 text-white/80">Exact word‑for‑word technicals (valuation, M&A, LBOs) + behavioral frameworks. Drills to lock in confidence, polish, and presence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee -->
+  <section class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-16 grid lg:grid-cols-2 gap-10 items-center">
+      <div class="order-2 lg:order-1">
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
+          <h2 class="text-2xl sm:text-3xl font-bold">Get an Offer — or Pay Nothing</h2>
+          <p class="mt-3 text-white/80">Full risk‑reversal. If you don’t land an IB offer, you don’t pay. We’re aligned with your outcome — period.</p>
+          <ul class="mt-4 space-y-2 text-white/80">
+            <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-primary-400"></span>Only 10 students per recruiting cycle.</li>
+            <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-primary-400"></span>Spots are limited — cycles don’t wait.</li>
+          </ul>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#apply" class="inline-flex items-center justify-center rounded-xl bg-primary-600 px-5 py-3 font-semibold hover:bg-primary-500">Apply Now</a>
+            <a href="#pricing" class="inline-flex items-center justify-center rounded-xl border border-white/20 px-5 py-3 font-semibold hover:bg-white/5">See Pricing</a>
+          </div>
+        </div>
+      </div>
+      <div class="order-1 lg:order-2">
+        <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-primary-900/40 to-primary-600/20 border border-white/10 p-6">
+          <div class="h-full w-full rounded-xl border border-white/10 bg-white/5 grid place-items-center text-center px-6">
+            <div>
+              <div class="text-5xl font-black">No Offer = $0</div>
+              <p class="mt-2 text-white/70">Aligned incentives. Real accountability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing / ROI -->
+  <section id="pricing" class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-16">
+      <h2 class="text-2xl sm:text-3xl font-bold">Pricing & ROI</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl bg-white/5 p-6 border border-white/10 flex flex-col">
+          <h3 class="text-lg font-semibold">Program</h3>
+          <p class="mt-2 text-white/80">$2,000–$3,000 only if you land an IB offer.</p>
+          <div class="mt-4 text-sm text-white/70">Includes AI engine, mentorship, positioning, interview prep, and all templates.</div>
+          <div class="mt-6">
+            <a href="#apply" class="inline-flex rounded-xl bg-primary-600 px-5 py-3 font-semibold hover:bg-primary-500">Apply Now</a>
+          </div>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6 border border-white/10">
+          <h3 class="text-lg font-semibold">Value Anchors</h3>
+          <ul class="mt-3 space-y-2 text-white/80">
+            <li>IB coaches often charge $500/hr+</li>
+            <li>MBA tuition can run $200k+</li>
+            <li>Comparable software costs thousands per month</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6 border border-white/10">
+          <h3 class="text-lg font-semibold">Outcome</h3>
+          <p class="mt-2 text-white/80">First‑year IB analysts earn ~$150k+ all‑in, with exit ops that can multiply that.</p>
+          <p class="mt-2 text-white/70">This program is designed to pay for itself many times over.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section id="apply" class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-16">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold">2‑Minute Application</h2>
+          <p class="mt-3 text-white/80">Selection‑based — no typing. If you’re a fit, you’ll be invited to book a call. Parents welcome.</p>
+          <form id="appForm" class="mt-8 space-y-8">
+            <!-- Year in school -->
+            <fieldset class="space-y-3">
+              <legend class="font-semibold">Year in School</legend>
+              <div class="grid sm:grid-cols-3 gap-3">
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer">
+                  <input type="radio" name="year" value="Sophomore" class="accent-primary-500" required>
+                  <span>Sophomore</span>
+                </label>
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer">
+                  <input type="radio" name="year" value="Junior" class="accent-primary-500">
+                  <span>Junior</span>
+                </label>
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer">
+                  <input type="radio" name="year" value="Senior" class="accent-primary-500">
+                  <span>Senior</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- GPA -->
+            <fieldset class="space-y-3">
+              <legend class="font-semibold">Current GPA</legend>
+              <div class="grid sm:grid-cols-4 gap-3">
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer"><input type="radio" name="gpa" value=">=3.7" class="accent-primary-500" required><span>≥ 3.7</span></label>
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer"><input type="radio" name="gpa" value="3.5–3.69" class="accent-primary-500"><span>3.5–3.69</span></label>
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer"><input type="radio" name="gpa" value="3.2–3.49" class="accent-primary-500"><span>3.2–3.49</span></label>
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer"><input type="radio" name="gpa" value="<3.2" class="accent-primary-500"><span>&lt; 3.2</span></label>
+              </div>
+            </fieldset>
+
+            <!-- Recruiting timeline -->
+            <fieldset class="space-y-3">
+              <legend class="font-semibold">Recruiting Timeline</legend>
+              <div class="grid sm:grid-cols-2 gap-3">
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer"><input type="radio" name="timeline" value="This Cycle" class="accent-primary-500" required><span>This Cycle</span></label>
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer"><input type="radio" name="timeline" value="Next Cycle" class="accent-primary-500"><span>Next Cycle</span></label>
+              </div>
+            </fieldset>
+
+            <!-- Target banks -->
+            <fieldset class="space-y-3">
+              <legend class="font-semibold">Target Banks</legend>
+              <div class="grid sm:grid-cols-3 gap-3">
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer"><input type="checkbox" name="banks" value="Bulge Bracket" class="accent-primary-500"><span>BB</span></label>
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer"><input type="checkbox" name="banks" value="Elite Boutique" class="accent-primary-500"><span>EB</span></label>
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer"><input type="checkbox" name="banks" value="Middle Market" class="accent-primary-500"><span>MM</span></label>
+              </div>
+            </fieldset>
+
+            <!-- Willingness to invest -->
+            <fieldset class="space-y-3">
+              <legend class="font-semibold">Willingness to Invest</legend>
+              <div class="grid sm:grid-cols-3 gap-3">
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer"><input type="radio" name="invest" value="$2–3k: Yes" class="accent-primary-500" required><span>$2–3k: Yes</span></label>
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer"><input type="radio" name="invest" value="Maybe" class="accent-primary-500"><span>Maybe</span></label>
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer"><input type="radio" name="invest" value="No" class="accent-primary-500"><span>No</span></label>
+              </div>
+            </fieldset>
+
+            <!-- Commitment level -->
+            <fieldset class="space-y-3">
+              <legend class="font-semibold">Commitment Level</legend>
+              <div class="grid sm:grid-cols-3 gap-3">
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer"><input type="radio" name="commit" value="Yes now" class="accent-primary-500" required><span>Yes now</span></label>
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer"><input type="radio" name="commit" value="Maybe" class="accent-primary-500"><span>Maybe</span></label>
+                <label class="flex items-center gap-2 rounded-xl border border-white/20 p-3 hover:bg-white/5 cursor-pointer"><input type="radio" name="commit" value="No" class="accent-primary-500"><span>No</span></label>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="w-full rounded-xl bg-primary-600 px-6 py-3 font-semibold hover:bg-primary-500">Submit Application</button>
+            <p id="appStatus" class="hidden text-sm text-white/70">Thanks! You’re a provisional fit — book your call below.</p>
+          </form>
+        </div>
+
+        <!-- Booking Card / Next Steps -->
+        <aside class="sticky top-20">
+          <div class="rounded-2xl bg-white/5 border border-white/10 p-6">
+            <h3 class="text-xl font-semibold">Book Your Call</h3>
+            <p class="mt-2 text-white/80">If your application is approved, choose a time on the next page. Invite your parents if you’d like their input.</p>
+            <a id="bookBtn" href="#" class="mt-5 inline-flex w-full items-center justify-center rounded-xl bg-white px-5 py-3 text-ink font-semibold hover:bg-primary-50 pointer-events-none opacity-50">Choose a Time (opens after submit)</a>
+            <ul class="mt-6 space-y-2 text-sm text-white/70">
+              <li>✅ Send your resume</li>
+              <li>✅ Accept the calendar invite</li>
+              <li>✅ Reply “yes” to confirm</li>
+            </ul>
+            <p class="mt-4 text-xs text-white/60">Unconfirmed slots may be released to waitlist.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-16">
+      <h2 class="text-2xl sm:text-3xl font-bold">FAQ</h2>
+      <div class="mt-6 divide-y divide-white/10 border border-white/10 rounded-2xl overflow-hidden">
+        <details class="group open:bg-white/5">
+          <summary class="flex cursor-pointer items-center justify-between p-5 text-left font-medium">Do I pay upfront?
+            <span class="ml-4 text-white/50 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <div class="px-5 pb-5 text-white/80">No. You only pay if you land an IB offer.</div>
+        </details>
+        <details class="group">
+          <summary class="flex cursor-pointer items-center justify-between p-5 text-left font-medium">How many students do you take?
+            <span class="ml-4 text-white/50 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <div class="px-5 pb-5 text-white/80">10 per recruiting cycle to keep mentorship personal.</div>
+        </details>
+        <details class="group">
+          <summary class="flex cursor-pointer items-center justify-between p-5 text-left font-medium">Can target/Ivy students join?
+            <span class="ml-4 text-white/50 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <div class="px-5 pb-5 text-white/80">Yes — especially if you’re struggling to stand out.</div>
+        </details>
+        <details class="group">
+          <summary class="flex cursor-pointer items-center justify-between p-5 text-left font-medium">What makes this different?
+            <span class="ml-4 text-white/50 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <div class="px-5 pb-5 text-white/80">Guaranteed outcome, proprietary outreach engine, current banker mentors, and exact word‑for‑word technicals.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-white/60">© <span id="year"></span> Breaking Into IB — Krishna Thiru</p>
+      <div class="flex items-center gap-4 text-sm text-white/60">
+        <a href="#" class="hover:text-white">Terms</a>
+        <a href="#" class="hover:text-white">Privacy</a>
+        <a href="#" class="hover:text-white">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for VSL -->
+  <div id="videoModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-4">
+    <div class="w-full max-w-3xl rounded-2xl bg-ink border border-white/10 shadow-xlsoft">
+      <div class="flex items-center justify-between border-b border-white/10 p-3">
+        <h3 class="font-semibold">5‑Minute Program Breakdown</h3>
+        <button id="closeModal" class="rounded-lg p-1 hover:bg-white/10">✕</button>
+      </div>
+      <div class="p-3">
+        <div class="aspect-video w-full overflow-hidden rounded-xl bg-black">
+          <!-- Replace with your actual hosted video/VSL URL -->
+          <iframe id="vslFrame" class="h-full w-full" src="" title="Program VSL" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Spots left (demo: random 3–10)
+    const spotsEl = document.getElementById('spotsLeft');
+    const storedSpots = localStorage.getItem('spotsLeft');
+    let spots = storedSpots ? parseInt(storedSpots, 10) : Math.floor(Math.random() * 8) + 3;
+    spotsEl.textContent = spots;
+
+    // Countdown to next cycle (30 days from first visit)
+    const countdownEl = document.getElementById('countdown');
+    const start = localStorage.getItem('cycleStart') ? new Date(localStorage.getItem('cycleStart')) : new Date();
+    if (!localStorage.getItem('cycleStart')) localStorage.setItem('cycleStart', start.toISOString());
+    const target = new Date(start.getTime() + 30*24*60*60*1000);
+    function tick(){
+      const now = new Date();
+      const diff = Math.max(0, target - now);
+      const d = Math.floor(diff / (1000*60*60*24));
+      const h = Math.floor(diff / (1000*60*60)) % 24;
+      const m = Math.floor(diff / (1000*60)) % 60;
+      countdownEl.textContent = `${d}d ${h}h ${m}m`;
+      requestAnimationFrame(() => setTimeout(tick, 1000));
+    }
+    tick();
+
+    // VSL modal (placeholder YouTube link)
+    const playVSL = document.getElementById('playVSL');
+    const videoModal = document.getElementById('videoModal');
+    const vslFrame = document.getElementById('vslFrame');
+    const closeModal = document.getElementById('closeModal');
+    playVSL.addEventListener('click', () => {
+      videoModal.classList.remove('hidden');
+      vslFrame.src = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0';
+    });
+    closeModal.addEventListener('click', () => {
+      vslFrame.src = '';
+      videoModal.classList.add('hidden');
+    });
+    videoModal.addEventListener('click', (e) => {
+      if (e.target === videoModal) { closeModal.click(); }
+    });
+
+    // Application form handling
+    const form = document.getElementById('appForm');
+    const status = document.getElementById('appStatus');
+    const bookBtn = document.getElementById('bookBtn');
+
+    // Load saved answers
+    const saved = JSON.parse(localStorage.getItem('application') || '{}');
+    if (Object.keys(saved).length) {
+      for (const [name, value] of Object.entries(saved)) {
+        const nodes = form.querySelectorAll(`[name="${name}"]`);
+        nodes.forEach(n => {
+          if (n.type === 'radio' || n.type === 'checkbox') {
+            if (Array.isArray(value)) n.checked = value.includes(n.value);
+            else n.checked = n.value === value;
+          }
+        });
+      }
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      // Serialize
+      const data = {};
+      new FormData(form).forEach((v, k) => {
+        if (data[k]) data[k] = Array.isArray(data[k]) ? [...data[k], v] : [data[k], v];
+        else data[k] = v;
+      });
+      localStorage.setItem('application', JSON.stringify(data));
+      status.classList.remove('hidden');
+      // Open booking (replace # with Calendly/Hubspot link)
+      bookBtn.href = '#book';
+      bookBtn.classList.remove('opacity-50','pointer-events-none');
+      // Simulate scarcity
+      if (spots > 1) { spots--; localStorage.setItem('spotsLeft', spots); spotsEl.textContent = spots; }
+      // Smooth scroll to booking
+      bookBtn.scrollIntoView({behavior:'smooth', block:'center'});
+    });
+  </script>
+</body>
+</html>
